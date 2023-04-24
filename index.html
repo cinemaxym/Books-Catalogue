@@ -1,0 +1,57 @@
+<!-- HTML document -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- this part is not visible for humans  -->  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Catalogue</title>
+</head>
+
+<body onload="displayList()"> 
+    <!-- calls displayList function when the page is loaded -->
+     <!-- this part is visible for humans  -->  
+    <div class="input">
+        <h1>My Favorite Books</h1>
+
+        <form>
+            <!-- Input form -->
+            <p>
+                <label for="title">Enter your favorite book's title: </label>
+                <input type="text" name="title" id="title">
+            </p>
+            <p>
+                <label for="author">Enter your favorite book's author: </label>
+                <input type="text" name="author" id="author">
+            </p>
+            <p>
+                <label for="genre">Enter your favorite book's genre: </label>
+                <input type="text" name="genre" id="genre">
+            </p>
+            <button id="addBtn">Create new book object</button>
+        </form>
+    </div>
+    <h2>Added Books </h2>
+
+    <table class="table">
+        <!-- Table -->
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <!-- The<tbody>tag where items of they array are displayed-->
+        <tbody id="bookListTable"></tbody>
+    </table>
+    <!-- Link JavaScript file -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
